@@ -24,3 +24,7 @@ cedar-policy = ["dep:cedar-policy"]
 
 [dev.dependencies]
 rand = "0.8.5"
+
+[patch.'https://github.com/cedar-policy/cedar.git']
+cedar-policy = { path = "../../cedar/cedar-policy" }
+cedar-policy-core = { path = "../../cedar/cedar-policy-core" }
