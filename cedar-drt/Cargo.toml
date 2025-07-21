@@ -8,7 +8,7 @@ publish = false
 libfuzzer-sys = "0.4"
 cedar-lean-ffi = { path = "../cedar-lean-ffi", version = "4.4.0" }
 cedar-policy = "4.4.0"
-cedar-policy-core = { version = "4.4.0", features = ["arbitrary", "entity-manifest", "tpe"] }
+cedar-policy-core = { git = 'https://github.com/cedar-policy/cedar.git', version = "4.4.0", features = ["arbitrary", "entity-manifest", "tpe"] }
 cedar-policy-formatter = "4.4.0"
 cedar-testing = { path = "../cedar/cedar-testing", version = "4.4.0" }
 cedar-policy-generators = { path = "../cedar-policy-generators", version = "4.0.0", features = ["cedar-policy"] }
@@ -29,7 +29,7 @@ integration-testing = []
 walkdir = "2.4"
 statrs = "0.18"
 
-[patch.crates-io]
+[patch.'https://github.com/cedar-policy/cedar']
 cedar-policy = { path = "../cedar/cedar-policy" }
 cedar-policy-core = { path = "../cedar/cedar-policy-core" }
 cedar-policy-formatter = { path = "../cedar/cedar-policy-formatter" }
